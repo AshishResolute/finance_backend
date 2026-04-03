@@ -3,15 +3,6 @@ import { AppError } from "../ErrorHandler/errorClass.js";
 import bcrypt from "bcrypt";
 import db from "../database/db.js";
 import jwt from "jsonwebtoken";
-import { fileURLToPath } from "url";
-import path from "path";
-import dotenv from "dotenv";
-
-const currentFilePath = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(currentFilePath);
-
-dotenv.config({ path: path.join(__dirname, "../../dev.env") });
-
 
 // get username,email,password
 
